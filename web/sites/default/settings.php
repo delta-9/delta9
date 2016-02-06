@@ -285,7 +285,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'RZ1QMNQNIQ79AFFea97jnLgkiC4ciuID2NEL0fZbO9NEVZy_Pe2osNicxn6O2YOOOrEk_NNZRw';
 
 /**
  * Deployment identifier.
@@ -712,3 +712,24 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 # if (file_exists(__DIR__ . '/settings.local.php')) {
 #   include __DIR__ . '/settings.local.php';
 # }
+$databases['default']['default'] = array (
+  'database' => 'delta9',
+  'username' => 'root',
+  'password' => 'T3ZFQsLN',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+
+$settings['install_profile'] = 'standard';
+
+$config_directories['sync'] = '../config/sync';
+
+$settings['trusted_host_patterns'] = array(
+  '^www\.delta9\.link$',
+  '^delta9\.link$',
+  '^www\.delta9\.site$',
+  '^delta9\.site$',
+);
