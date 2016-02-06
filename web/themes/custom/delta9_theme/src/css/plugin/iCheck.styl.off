@@ -1,0 +1,23 @@
+.icheckbox,
+.iradio
+  display inline-block
+  vertical-align middle
+  size 24px
+  border 3px solid #CFCED2
+  margin-top 4px
+  &.hover
+    border-color #666
+    + label
+      cursor pointer
+  &.checked
+    border-color #666
+    + label
+      cursor pointer
+
+form
+  .form-type-checkbox
+    margin-top 10px
+    label
+      padding-left 10px
+      display inline-block
+      cursor pointer

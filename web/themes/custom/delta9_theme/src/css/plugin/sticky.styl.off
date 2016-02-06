@@ -1,0 +1,19 @@
+.header-placeholder
+  {float}
+  
+.header-placeholder-fixed
+  {float}
+  display none
+
+.header-fixed
+  .header-placeholder-fixed
+    display block
+  #header
+    fixed top left
+    z-index 10000
+    transform translateY(0)
+    {tr}
+
+.header-hide
+  #header
+    transform translateY(-100%)

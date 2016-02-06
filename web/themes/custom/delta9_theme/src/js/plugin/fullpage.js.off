@@ -1,0 +1,19 @@
+(function($){'use strict';Drupal.behaviors.gd_plugin_fullpage={attach:function(context,settings){
+
+  if(gd.processed(this)) return;
+
+  $('#fullpage').fullpage({
+
+    navigation: true,
+    navigationPosition: 'right',
+    sectionSelector: '.section',
+    slideSelector: '.slide',
+  });
+  /*
+  Doc : https://github.com/alvarotrigo/fullPage.js#fullpagejs
+
+  $.fn.fullpage.moveTo(1);
+  */
+
+
+}}})(jQuery);

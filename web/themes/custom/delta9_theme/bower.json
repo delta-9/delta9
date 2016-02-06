@@ -1,0 +1,61 @@
+{
+  "name": "gd",
+  "version": "1.0.0",
+  "homepage": "http://studio.gd",
+  "authors": [
+    "Studio.gd <contact@studio.gd>"
+  ],
+  "license": "0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/js-bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "overrides": {
+    "slick-carousel": {
+      "main": [
+        "slick/slick.min.js",
+        "slick/slick.css"
+      ]
+    },
+    "animatescroll": {
+      "main": "animatescroll.js"
+    },
+    "jquery-throttle-debounce": {
+      "main": "jquery.ba-throttle-debounce.js"
+    },
+    "jquery.viewport": {
+      "main": "index.js"
+    },
+    "chosen": {
+      "main": [
+        "chosen.jquery.min.js",
+        "chosen.min.css"
+      ]
+    },
+    "pikaday": {
+      "main": [
+        "./pikaday.js",
+        "./plugins/pikaday.jquery.js",
+        "./css/pikaday.css"
+      ]
+    },
+    "select2": {
+      "main": [
+        "dist/js/select2.js",
+        "dist/css/select2.min.css"
+      ]
+    },
+    "featherlight": {
+      "main": [
+        "release/featherlight.min.js",
+        "release/featherlight.min.css"
+      ]
+    }
+  }
+}

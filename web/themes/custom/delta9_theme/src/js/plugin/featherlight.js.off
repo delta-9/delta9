@@ -1,0 +1,17 @@
+(function($){'use strict';Drupal.behaviors.gd_plugin_featherlight={attach:function(context,settings){
+
+  if(gd.processed(this)) return;
+
+  // Doc : https://github.com/noelboss/featherlight#usage
+
+  $.featherlight.defaults.openSpeed = 220;
+  $.featherlight.defaults.closeSpeed = 180;
+
+  $.featherlight.defaults.afterContent = function()
+  {
+    //
+  };
+
+  
+
+}}})(jQuery);

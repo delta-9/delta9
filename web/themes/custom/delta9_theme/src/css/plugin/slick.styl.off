@@ -1,0 +1,33 @@
+.slick-slider
+  {float}
+  position relative
+  .prev,
+  .next
+    top center
+    zi 100
+    size 20
+    &:hover
+      //
+  .prev
+    left 10
+    //png 'picto/prev' center center
+  .next
+    right 10
+    //png 'picto/next' center center
+  .dots
+    absolute bottom 10 left
+    width 100%
+    text-align center
+    li
+      display inline-block
+      a
+        float left
+        size 10
+        text-indent -9999em
+        margin 0 2px
+        bgc #fff
+      &:hover a,
+      &.slick-active a
+        bgc #fff
+  .slider
+    position relative

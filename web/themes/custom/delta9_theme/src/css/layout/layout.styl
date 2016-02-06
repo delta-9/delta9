@@ -1,0 +1,56 @@
+::selection
+  c #f #16518e
+  text-shadow none
+
+html
+  box-sizing border-box
+  fz 10
+  /*
+  wrapper-resp = 1100px
+  fs-resp      = 10px
+
+  for i in (1..80)
+
+    wrapper-resp = wrapper-resp - 7.5px
+    fs-resp      = fs-resp      - 0.06px
+
+    +below(round(wrapper-resp, 5))
+      fz round(fs-resp, 5)
+
+  &.mobile
+    fz 10
+  */
+
+body
+  margin 0
+  c color-text color-bg
+  ff font
+  fw 400
+  fz 16px 16px
+
+#content
+  {R}
+
+.wrapper
+  wrapper 960px
+
+a
+  transition-duration .3s
+  transition-property opacity, color, background-color
+  cursor pointer
+  outline 0
+  c color-link
+  text-decoration none
+  &:hover
+    c color-link-hover
+
+img
+  max-width 100%
+  height auto
+
+sup
+  relative top -.5em right
+  font-size 75%
+  line-height 0
+  vertical-align baseline
+

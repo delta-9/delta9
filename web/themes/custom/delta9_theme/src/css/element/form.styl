@@ -1,0 +1,114 @@
+
+input-border-width = 1px
+input-border-color = #848484 #c1c1c1 #e1e1e1
+input-font = font
+input-font-size = 13px
+input-height = 28px
+input-border-radius = 0
+textarea-height = auto
+input-focus =
+  border-color #333
+  color #000
+
+label,
+.form-wrapper,
+.form-actions,
+.form-item,
+form .description
+  {R}
+
+.form-item
+  margin-top 10px
+  margin-bottom 10px
+
+label
+  margin-bottom 5px
+
+form .form-item .description
+  margin-top 3px
+  font-size 13px
+  font-style italic
+  color #7 
+
+input[type=search]::-webkit-search-decoration
+  display none
+
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=url],
+input[type=email]
+  appearance none
+
+textarea,
+select,
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=url],
+input[type=email]
+  transition all 0.3s ease
+  border-radius input-border-radius
+  background-color #fff
+  color #000
+  border input-border-width solid
+  border-color input-border-color
+  outline 0
+  padding 2px 3px
+  text-align left
+  font-size input-font-size
+  font-family input-font
+  vertical-align top
+  size 100% input-height
+  &:focus
+    &::placeholder
+      color #bbb
+
+textarea,
+select[size],
+select[multiple]
+  height auto
+
+textarea
+  min-height 40px
+  overflow auto
+  resize vertical
+
+input,
+textarea
+  &::placeholder
+    color #666
+    opacity 1
+
+input,
+select,
+textarea
+  &:focus
+    {input-focus}
+
+form .form-item .error
+  border-width 1px
+
+input[type=file],
+input[type=radio],
+input[type=checkbox]
+  &:focus,
+  &:active
+    box-shadow none
+
+textarea[disabled],
+select[disabled],
+input[type=text][disabled],
+input.form-text[disabled]
+  background-color #eee
+
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+textarea[disabled]
+  box-shadow none
+  user-select none
+  color #888
+  cursor default
+

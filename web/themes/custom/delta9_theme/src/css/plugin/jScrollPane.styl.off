@@ -1,0 +1,23 @@
+
+custom-scroll-border-radius = null
+
+.custom-scroll
+  overflow auto
+  .jspVerticalBar
+    width 10px // scrollbar width
+    background transparent
+    .jspTrack // scrollbar background
+      background-color #cdcdcd
+      if custom-scroll-border-radius
+        border-radius custom-scroll-border-radius
+    .jspDrag // scrollbar handler
+      background-color #7e7b7b
+      if custom-scroll-border-radius
+        border-radius custom-scroll-border-radius
+
+
+/*
+Todo :
+  - horizontal scrollbar
+  - Arrows
+*/

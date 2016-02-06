@@ -1,0 +1,24 @@
+(function($){'use strict';Drupal.behaviors.gd_plugin_cookie={attach:function(context,settings){
+
+  // require js-cookie
+
+  if(gd.processed(this)) return;
+
+  var cookie = Cookies.get('cookie-disclaimer');
+
+  if(cookie != '1')
+  {
+    $('.cookie-disclaimer').show();
+    $('body').addClass('cookied');
+
+    $('.cookie-disclaimer a.accept').on('click', function()
+    {
+      $('.cookie-disclaimer').hide();
+      $('body').removeClass('cookied');
+
+      Cookies.set('cookie-disclaimer', '1', {expires: Infinity});
+      return false;
+    });
+  }
+
+}}})(jQuery);

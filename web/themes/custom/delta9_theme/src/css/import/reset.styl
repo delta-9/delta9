@@ -1,0 +1,39 @@
+reset-box-model()
+  margin 0
+  padding 0
+  border 0
+  outline 0
+
+reset-font()
+  font-weight inherit
+  font-style inherit
+  font-family inherit
+  font-size 100%
+  vertical-align baseline
+
+
+/* Nib nested-reset() whithout headings */
+div, span, object, iframe, p,
+pre, a, abbr, em, img,
+dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, caption, tbody, tfoot, thead, tr
+  reset-box-model()
+  reset-font()
+table
+  border-collapse separate
+  border-spacing 0
+  vertical-align middle
+caption, th, td
+  text-align left
+  font-weight normal
+  vertical-align middle
+a img
+  border none
+
+/* Nib reset-html5() whithout display */
+article, aside, canvas, details, figcaption,
+figure, footer, header, nav, section
+  reset-box-model()
+
+*,:before,:after
+  box-sizing inherit

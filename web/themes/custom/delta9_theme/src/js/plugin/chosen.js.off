@@ -1,0 +1,12 @@
+(function($){'use strict';Drupal.behaviors.gd_plugin_chosen={attach:function(context,settings){
+
+  if(gd.processed(this)) return;
+
+  var elements = $('select');
+
+  elements.chosen({
+    disable_search_threshold: 80
+  });
+
+
+}}})(jQuery);

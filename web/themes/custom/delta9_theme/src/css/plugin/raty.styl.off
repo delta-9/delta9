@@ -1,0 +1,15 @@
+.raty
+  display inline-block
+  text-align center
+  font-size 0
+  a
+    display inline-block
+    size 18
+    margin 0 1px
+    background-position center center
+    [data-read-only="1"]&
+      cursor default
+  .star-on-png
+    //png 'rate/on'
+  .star-off-png
+    //png 'rate/off'

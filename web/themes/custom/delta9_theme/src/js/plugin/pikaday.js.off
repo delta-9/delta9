@@ -1,0 +1,24 @@
+(function($){'use strict';Drupal.behaviors.gd_plugin_pikaday={attach:function(context,settings){
+
+  if(gd.processed(this)) return;
+
+  var i18n = {
+    previousMonth : 'Mois précédent',
+    nextMonth : 'Mois suivant',
+    months : ['Janvier','Février', 'Mars','Avril','Mai','Juin','Juillet','Août','Septembre',"Octobre","Novembre","Décembre"],
+    weekdays : ['dimanche',"lundi","mardi","mercredi","jeudi","vendredi","samedi"],
+    weekdaysShort : ['Dim', 'Mon', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam']
+  };
+
+  var Y = new Date().getFullYear()
+
+  $('.datepicker').pikaday(
+  {
+    i18n: i18n,
+    yearRange: [Y, Y+2],
+    firstDay:1,
+    format: "DD/MM/YYYY",
+  });
+
+
+}}})(jQuery);

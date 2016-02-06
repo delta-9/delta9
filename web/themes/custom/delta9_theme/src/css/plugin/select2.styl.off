@@ -1,0 +1,49 @@
+select-height = 25px
+
+.select2
+  width 100% // use a container to set width if possible
+  .select2-selection
+    height select-height
+    border-radius 0
+    border 0
+    c #000
+    .select2-selection__placeholder
+      // placeholder style (see js/plugin/select.js to set placeholder)
+    .select2-selection__rendered
+      fz 12px select-height + 1
+    .select2-selection__arrow
+      height select-height - 1
+      // png 'picto/select-down' center center
+      .select2-container--open&
+        // png 'picto/select-up'
+      b
+        display none
+  .select2-selection__clear
+    // clear select (allowClear)
+
+.select2-container
+  .select2-dropdown
+    border-radius 0
+    border 0
+    box-shadow 0 3px 3px rgba(#222, 0.3)
+    ul
+      width 100%
+    li
+      font-size 12px
+      &[aria-selected="true"]
+        font-weight bold
+    .select2-results__option--highlighted
+      bgc blue
+  .select2-results__group
+    // optgroup style
+
+
+
+body.logged-in > .select2-container
+  margin-top 29px // Drupal (29) or WP (32) admin menu height
+
+/*
+
+Pour créer des themes il faut ajouter : data-theme="mon-theme" au <select>
+
+*/

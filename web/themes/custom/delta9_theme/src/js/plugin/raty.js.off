@@ -1,0 +1,29 @@
+(function($){'use strict';Drupal.behaviors.gd_plugin_raty={attach:function(context,settings){
+
+  if(gd.processed(this)) return;
+
+  /*
+  To set score :
+  data-score=""
+
+  To set read Only :
+  data-read-only="true"
+
+  */
+
+
+  $('.raty').raty({
+    starType: 'a',
+    score: function()
+    {
+      return $(this).data('score');
+    },
+    readOnly: function()
+    {
+      return !!$(this).data('read-only');
+    },
+    hints: ['', '', '', '', '']
+  });
+
+
+}}})(jQuery);

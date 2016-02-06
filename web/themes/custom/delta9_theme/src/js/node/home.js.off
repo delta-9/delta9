@@ -1,0 +1,7 @@
+(function($){'use strict';Drupal.behaviors.gd_home={attach:function(context,settings) {
+
+  if(gd.processed(this) || !$('.home')[0]) return;
+
+
+
+}}})(jQuery);

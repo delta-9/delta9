@@ -1,0 +1,68 @@
+float =
+  float left
+  width 100%
+
+R =
+  float left
+  width 100%
+
+inlineblock =
+  float none
+  display inline-block
+
+tr =
+  transition all 0.3s ease
+
+
+fullpath-img = '../../dist/img/'
+path-img = '../img/'
+
+img(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  if filename == none
+    background-image none
+  else
+    background-image url(path-img+filename)
+    tmp-size = image-size(fullpath-img+filename)
+    background-size tmp-size[0] tmp-size[1]
+
+    if rep == false
+      background-repeat no-repeat
+    else if rep == no-repeat or rep == repeat or rep == repeat-x or rep == repeat-y or rep == inherit
+      background-repeat rep
+      if p2 == null
+        p2 = 0
+      background-position p1 p2 p3 p4
+    else
+      background-repeat no-repeat
+      background-position rep p1 p2 p3
+
+
+img-size(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img(filename, rep, p1, p2, p3, p4)
+  tmp-size = image-size(fullpath-img+filename)
+  size tmp-size[0] tmp-size[1]
+
+
+png(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img(filename+'.png', rep, p1, p2, p3, p4)
+png-size(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img-size(filename+'.png', rep, p1, p2, p3, p4)
+jpg(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img(filename+'.jpg', rep, p1, p2, p3, p4)
+jpg-size(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img-size(filename+'.jpg', rep, p1, p2, p3, p4)
+gif(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img(filename+'.gif', rep, p1, p2, p3, p4)
+gif-size(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img-size(filename'.gif', rep, p1, p2, p3, p4)
+svg(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img(filename+'.svg', rep, p1, p2, p3, p4)
+svg-size(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img-size(filename'.svg', rep, p1, p2, p3, p4)
+
+
+// wrapper
+wrapper(max_width)
+  max-width max_width
+  margin auto
+  clear both

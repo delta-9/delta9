@@ -1,0 +1,80 @@
+
+chosen-width = 100%
+chosen-text-color = #575856
+chosen-border-color = color-dark
+chosen-border-radius = 2px
+chosen-background-color = #fff
+chosen-highlighted-color = color-dark
+chosen-height = 27px
+
+
+#page .chosen-container
+  text-align left
+  box-shadow none
+  border-radius 3px
+  border 0
+  width chosen-width !important
+  margin-bottom 10px
+  text-indent 20px
+  a
+    height chosen-height
+    line-height chosen-height +3px
+    background chosen-background-color
+    border 0
+    color chosen-text-color
+  *
+    border 0
+    box-shadow none
+    img none
+  ul
+    {float}
+    padding 0
+    margin 0
+    li
+      {float}
+      line-height 18px
+      padding-top 5px
+      padding-left 10px
+      font-size 12px
+  a.chosen-single
+    color chosen-text-color
+    font-size 12px
+    font-weight normal
+    font-style normal
+    background chosen-background-color
+    border-radius chosen-border-radius
+    letter-spacing -.2px
+    img none
+    div
+      background-color color-dark
+      size chosen-height
+      png 'picto/select' center center
+      border-radius 0 chosen-border-radius chosen-border-radius 0
+  .chosen-drop
+    border 0
+    margin-top 0
+    width 100%
+    // if select has border : use this : (here border is 1px)
+    // margin-left -1px
+    // width calc(100% + 2px)
+    // width -moz-calc(100% + 2px)
+    // width -webkit-calc(100% + 2px)
+
+    background chosen-background-color
+    .highlighted
+      background-color chosen-highlighted-color
+      color #fff
+  .search-choice-close
+    background-color transparent
+    &:after
+      content "X"
+      color #000
+      font-size 15px
+      margin-left 1px
+      line-height 19px
+      display inline-block
+  &.chosen-with-drop
+    a.chosen-single
+      border-radius chosen-border-radius chosen-border-radius 0 0
+    a.chosen-single div
+      border-radius 0 chosen-border-radius 0 0

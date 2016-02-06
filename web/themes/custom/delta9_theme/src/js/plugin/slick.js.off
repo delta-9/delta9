@@ -1,0 +1,47 @@
+(function($){'use strict';Drupal.behaviors.gd_plugin_slick={attach:function(context,settings){
+
+  if(gd.processed(this)) return;
+
+  $('.slideshow').each(function()
+  {
+    var e = $(this);
+
+    var settings = {
+      slide: '.slide',
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 500,
+      autoplaySpeed: 8000,
+      pauseOnHover: false,
+      pauseOnDotsHover: true,
+      prevArrow: '<a class="prev"></a>',
+      nextArrow: '<a class="next"></a>',
+      dotsClass: 'dots',
+      customPaging: function(slider, i) {
+        return '<a>' + (i + 1) + '</a>';
+      },
+    };
+
+/*
+    if(e.is('.slideshow-truc'))
+    {
+      settings.slidesToShow   = 2;
+      settings.slidesToScroll = 2;
+    }
+*/
+
+    e.slick(settings);
+
+  });
+
+
+/*
+  if you init an hidden slideshow, you will have pb. When you show it, you must do : 
+
+  $('.my-slideshow').slick('setPosition');
+
+  (add a timeout if you display it with a transition)
+*/
+
+
+}}})(jQuery);

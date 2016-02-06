@@ -1,0 +1,42 @@
+name: delta9_theme
+type: theme
+base theme: classy
+description: 'Studio.gd'
+screenshot: screenshot.png
+package: Custom
+core: 8.x
+stylesheets-remove:
+  - '@classy/css/components/dialog.css'
+  - '@classy/css/components/action-links.css'
+  - '@classy/css/components/breadcrumb.css'
+  - '@classy/css/components/button.css'
+  - '@classy/css/components/collapse-processed.css'
+  - '@classy/css/components/container-inline.css'
+  - '@classy/css/components/details.css'
+  - '@classy/css/components/exposed-filters.css'
+  - '@classy/css/components/field.css'
+  - '@classy/css/components/form.css'
+  - '@classy/css/components/icons.css'
+  - '@classy/css/components/inline-form.css'
+  - '@classy/css/components/item-list.css'
+  - '@classy/css/components/link.css'
+  - '@classy/css/components/links.css'
+  - '@classy/css/components/menu.css'
+  - '@classy/css/components/more-link.css'
+  - '@classy/css/components/pager.css'
+  - '@classy/css/components/tabledrag.css'
+  - '@classy/css/components/tableselect.css'
+  - '@classy/css/components/tablesort.css'
+  - '@classy/css/components/tabs.css'
+  - '@classy/css/components/textarea.css'
+  - '@classy/css/components/ui-dialog.css'
+  - '@classy/css/components/messages.css'
+  - core/assets/vendor/normalize-css/normalize.css
+regions:
+  header: Header
+  content: Content
+  footer: Footer
+
+libraries:
+  - delta9_theme/base
+  - delta9_theme/base-mobile

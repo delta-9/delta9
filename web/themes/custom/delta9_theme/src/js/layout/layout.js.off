@@ -1,0 +1,9 @@
+(function($){'use strict';Drupal.behaviors.gd_layout={attach:function(context,settings){
+
+  if(gd.processed(this)) return;
+
+
+
+
+
+}};})(jQuery);

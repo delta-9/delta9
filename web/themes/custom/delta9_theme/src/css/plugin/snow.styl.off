@@ -1,0 +1,5 @@
+canvas#snow
+  fixed top left right bottom
+  z-index 1000
+  pointer-events none
+  size 100%

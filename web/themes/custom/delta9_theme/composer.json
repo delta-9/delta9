@@ -1,0 +1,13 @@
+{
+  "name": "gd/gd_theme",
+  "description": "Drupal 8 gd base theme",
+  "type": "drupal-theme",
+  "homepage": "http://git.studio.gd/gd/gd_theme",
+  "authors": [
+    {
+      "name": "studio.gd",
+      "homepage": "http://studio.gd"
+    }
+  ],
+  "require": { }
+}

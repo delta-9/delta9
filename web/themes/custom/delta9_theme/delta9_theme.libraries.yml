@@ -1,0 +1,18 @@
+base:
+  version: 1.x
+  css:
+    theme:
+      dist/css/plugin.css: {}
+      dist/css/all.css: {}
+  js:
+    dist/js/ie.js: { browsers: { IE: 'lte IE 9', '!IE': false } }
+    dist/js/all.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+base-mobile:
+  version: 1.x
+  header: true
+  js:
+    dist/js/is-mobile.js: {}

@@ -1,0 +1,24 @@
+(function($){'use strict';Drupal.behaviors.gd_plugin_pretty_embed={attach:function(context,settings){
+
+  if(gd.processed(this)) return;
+
+  /*
+  Doc : https://github.com/mike-zarandona/prettyembed.js#prettyembedjs
+  
+  Add .pretty-embed to div and data-pe-videoid="xxxxx" (youtube video id)
+
+  <div class="pretty-embed" data-pe-videoid="xxxxx"></div>
+  */
+
+  $().prettyEmbed({
+    customPreviewImage: '',
+    showInfo: false,
+    showControls: true,
+    loop: false,
+    colorScheme: 'dark',
+    showRelated: false,
+    useFitVids: false
+  });
+
+
+}}})(jQuery);

@@ -1,0 +1,18 @@
+(function($){'use strict';Drupal.behaviors.gd_plugin_icheck={attach:function(context,settings){
+
+  if(gd.processed(this)) return;
+
+  var elements = $('.form-type-checkbox, .form-type-radio');
+
+  elements.iCheck({
+    // labelHover: false,
+    cursor: true
+  });
+
+  // trigger ctools-auto-submit
+  elements.on('ifChecked', function(event) {
+    $(this).find('.ctools-auto-submit').change();
+  });
+
+
+}}})(jQuery);

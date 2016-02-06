@@ -17,3 +17,8 @@ logs
 
 # Ignore settings.php
 settings.php
+
+# Ignore Eclipse files
+.settings
+.buildpath
+.project

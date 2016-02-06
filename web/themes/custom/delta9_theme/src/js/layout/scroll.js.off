@@ -1,0 +1,19 @@
+(function($){'use strict';Drupal.behaviors.gd_scroll={attach:function(context,settings){
+
+  if(gd.processed(this)) return;
+
+
+  var W = $(window);
+
+  W.scroll($.throttle(180, function(e)
+  {
+    var pos = W.scrollTop();
+
+
+
+
+
+  })).scroll();
+
+
+}}})(jQuery);

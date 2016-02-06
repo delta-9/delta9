@@ -1,0 +1,26 @@
+(function($){'use strict';Drupal.behaviors.gd_plugin_countdown={attach:function(context,settings){
+
+  if(gd.processed(this)) return;
+
+  $("#countdown")
+  .countdown("2017/01/01", function(event) {
+    $(this).text(
+      event.strftime('%D days %H:%M:%S')
+    );
+  });
+
+/*
+finalDate : 
+- The milliseconds from Epoch time
+- String formatted as following:
+
+    YYYY/MM/DD
+    MM/DD/YYYY
+    YYYY/MM/DD hh:mm:ss
+    MM/DD/YYYY hh:mm:ss
+
+Doc : http://hilios.github.io/jQuery.countdown/documentation.html
+*/
+
+
+}}})(jQuery);

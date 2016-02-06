@@ -1,0 +1,30 @@
+(function($){'use strict';Drupal.behaviors.gd_plugin_range_slider={attach:function(context,settings){
+  
+  if(gd.processed(this)) return;
+  
+  /*
+  Doc : https://github.com/IonDen/ion.rangeSlider
+  
+  <input type="text"
+         class="range-slider"
+         value=""
+         data-min="0"
+         data-max="1000"
+         data-from="0"
+         data-to="1000"
+  >
+  */
+  
+  $('.range-slider').ionRangeSlider({
+    type: 'double', /* or single */
+    grid: true,
+    step: 1,
+    min: 0,
+    max: 1000,
+    from: 200,
+    to: 800,
+    prefix: '',
+    postfix: '',
+  });
+  
+}}})(jQuery);

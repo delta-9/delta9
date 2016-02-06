@@ -1,0 +1,67 @@
+(function($){'use strict';Drupal.behaviors.gd_custom_scroll={attach:function(context,settings){
+
+  if(gd.processed(this)) return;
+  /*
+
+  CSS : src/css/element/jScrollPane.styl
+
+  Settings : http://jscrollpane.kelvinluck.com/settings.html
+  Events : http://jscrollpane.kelvinluck.com/events.html
+  Api : http://jscrollpane.kelvinluck.com/api.html
+
+  You need a container AND a wrapper, ex :
+
+  <div class="custom-scroll">
+    <div class="wrapper-scroll">
+
+      Content...
+
+    </div>
+  </div>
+
+  /!\ Your content must NOT be "display:none;" when you init jScrollPane()
+      You can : opacity: 0; or position absolute;left: -99999em;
+  */
+
+
+  $('.custom-scroll').on('jsp-initialised', function()
+  {
+    // Do things when jScrollPane is initialised
+  })
+  .jScrollPane(
+  {
+    verticalDragMinHeight: 50,
+  });
+
+
+
+  /*
+
+  if you add or remove content, you must reinitialize jscrollpane :
+
+  /!\ You must reinit only one block at a time, if .custom-scroll select more than
+      one block : make a each loop on it.
+
+  var api = $('.custom-scroll').data('jsp');
+      api.reinitialise();
+
+
+  /!\ If block size change or if you want to change properties, you must reinit too but it seems
+      that using their api doesn't work well. Just init jScrollPane() again :
+
+
+  $('.custom-scroll').on('jsp-initialised', function()
+  {
+    // Things to do when custom scroll is ready
+  })
+  .jScrollPane(
+  {
+    verticalDragMinHeight: 50,
+  });
+
+
+  */
+
+
+
+}}})(jQuery);

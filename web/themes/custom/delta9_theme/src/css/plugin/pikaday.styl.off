@@ -1,0 +1,7 @@
+.pika-button:hover
+  // survol d'une date
+.pika-prev,
+.pika-next
+  height 19px
+  &:hover
+    //

@@ -1,0 +1,21 @@
+.cookie-disclaimer
+  display none
+  fixed bottom left
+  background-color color-red
+  color #FFF
+  padding 5px 0
+  width 100%
+  z-index 99
+  font-size 14px
+  text-align center
+  line-height 23px
+  a.accept
+    background-color #eee
+    color #000
+    display inline-block
+    margin 0 5px
+    padding 0 5px
+  a.read-more
+    color #fff
+    text-decoration underline
+    font-size 13px

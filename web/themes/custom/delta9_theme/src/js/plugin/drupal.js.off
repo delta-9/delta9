@@ -1,0 +1,21 @@
+/*
+require this code before all js :
+<script>Drupal={behaviors:{}};</script>
+*/
+
+(function($){
+  $(function()
+  {
+
+    var drupaljs = function()
+    {
+      $.each(Drupal.behaviors, function(k)
+      {
+        Drupal.behaviors[k].attach();
+      });
+    }();
+
+    $(document).ajaxComplete(drupaljs);
+
+  });
+})(jQuery);
