@@ -14,3 +14,6 @@ web/sites/default/files
 
 # Ignore php/apache logs
 logs
+
+# Ignore settings.php
+settings.php
