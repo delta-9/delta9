@@ -1,0 +1,8 @@
+name: GD Core
+description: -
+core: 8.x
+package: GD
+type: module
+
+dependencies: 
+  - gd_theme

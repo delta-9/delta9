@@ -1,0 +1,20 @@
+uuid: 1e5a2061-5f33-4b38-bf18-24a136b31ebf
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - THEME
+id: mainpagecontent
+theme: THEME
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,49 @@
+name: GD
+type: profile
+description: 'Start with the modules, needed by me, enabled.'
+version: VERSION
+core: 8.x
+
+# drush si gd_profil --account-pass=admin --locale=fr --site-name="Sitename" --site-mail=sitename@studio.gd
+# drush en gd_core
+
+dependencies:
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - color
+  - config
+  - comment
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - entity_reference
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - devel
+themes:
+  - adminimal
+  - classy
+  - seven
+  - delta9_theme
