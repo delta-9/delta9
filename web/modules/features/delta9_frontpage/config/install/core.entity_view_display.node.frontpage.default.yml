@@ -2,14 +2,25 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.frontpage.body
+    - field.field.node.frontpage.field_meta_tags
     - node.type.frontpage
   module:
+    - text
     - user
+_core:
+  default_config_hash: D-II5T8TAQbGHZ2aGbErLJtxdSQVHaBclCvyWxqgaWg
 id: node.frontpage.default
 targetEntityType: node
 bundle: frontpage
 mode: default
 content:
-  links:
-    weight: 100
-hidden: {  }
+  body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  field_meta_tags: true
+  links: true

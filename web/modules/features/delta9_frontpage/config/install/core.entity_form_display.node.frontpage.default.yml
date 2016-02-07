@@ -2,19 +2,38 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.frontpage.body
+    - field.field.node.frontpage.field_meta_tags
     - node.type.frontpage
   module:
+    - metatag
     - path
+    - text
+_core:
+  default_config_hash: i-WB8oeDg2gqKBd-eq1mGRNcNNCTXsVxOlpVBd1hOyE
 id: node.frontpage.default
 targetEntityType: node
 bundle: frontpage
 mode: default
 content:
+  body:
+    weight: 32
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
   created:
     type: datetime_timestamp
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_meta_tags:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
   path:
     type: path
     weight: 30
