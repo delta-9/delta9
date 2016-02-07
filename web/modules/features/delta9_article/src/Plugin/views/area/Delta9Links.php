@@ -42,11 +42,11 @@ class Delta9Links extends AreaPluginBase {
     if (!$empty || !empty($this->options['empty'])) {
 
       return [
-        '#title' => $this->t('Return to front'),
+        '#title' => $this->t('< Return to front'),
         '#type' => 'link',
         '#url' => Url::fromRoute('<front>'),
         '#attributes' => [
-          'class' => ['button']
+          'class' => ['button', 'secondary']
         ]
       ];
     }

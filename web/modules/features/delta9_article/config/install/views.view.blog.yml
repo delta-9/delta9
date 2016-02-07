@@ -6,6 +6,7 @@ dependencies:
     - node.type.article
     - system.menu.main
   module:
+    - delta9_article
     - node
     - user
 id: blog
@@ -161,8 +162,26 @@ display:
             label: ''
           granularity: second
       title: Blog
-      header: {  }
-      footer: {  }
+      header:
+        delta9links:
+          id: delta9links
+          table: views
+          field: delta9links
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          plugin_id: delta9links
+      footer:
+        delta9links:
+          id: delta9links
+          table: views
+          field: delta9links
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          plugin_id: delta9links
       empty: {  }
       relationships: {  }
       arguments: {  }
