@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - THEME
+    - delta9_theme
 id: mainnavigation
-theme: THEME
+theme: delta9_theme
 region: header
 weight: -2
 provider: null

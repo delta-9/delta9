@@ -43,7 +43,6 @@ dependencies:
   - views_ui
   - devel
 themes:
-  - adminimal
   - classy
   - seven
   - delta9_theme

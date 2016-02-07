@@ -5,9 +5,9 @@ dependencies:
   module:
     - system
   theme:
-    - THEME
+    - delta9_theme
 id: mainpagecontent
-theme: THEME
+theme: delta9_theme
 region: content
 weight: 1
 provider: null
