@@ -13,7 +13,8 @@ web/sites/default/files
 .idea
 
 # Ignore php/apache logs
-logs
+logs/*
+!logs/.gitkeep
 
 # Ignore Eclipse files
 .settings
