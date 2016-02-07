@@ -4,7 +4,7 @@ description: 'Start with the modules, needed by me, enabled.'
 version: VERSION
 core: 8.x
 
-# drush si gd_profil --account-pass=admin --locale=fr --site-name="Sitename" --site-mail=sitename@studio.gd
+# drush si gd_profil --account-pass=admin --locale=fr --site-name="delta - Vincent Baronnet" --site-mail=vincent.baronnet@gmail.com
 # drush en gd_core
 
 dependencies:
@@ -41,6 +41,12 @@ dependencies:
   - rdf
   - views
   - views_ui
+  - admin_toolbar
+  - config_update
+  - features
+  - features_ui
+  - metatag
+  - deploy
   - devel
 themes:
   - classy

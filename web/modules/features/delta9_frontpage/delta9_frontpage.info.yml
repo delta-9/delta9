@@ -1,0 +1,10 @@
+name: 'Front page'
+description: 'Provide Front page content type and related configuration. '
+type: module
+core: 8.x
+dependencies:
+  - menu_ui
+  - node
+  - path
+  - user
+package: delta9

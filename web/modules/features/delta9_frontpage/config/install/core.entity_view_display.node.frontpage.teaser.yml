@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.frontpage
+  module:
+    - user
+id: node.frontpage.teaser
+targetEntityType: node
+bundle: frontpage
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

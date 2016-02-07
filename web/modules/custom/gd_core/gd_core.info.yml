@@ -1,8 +1,9 @@
 name: GD Core
-description: -
+description: Core module.
 core: 8.x
 package: GD
 type: module
 
 dependencies: 
   - gd_theme
+  - delta9_frontpage

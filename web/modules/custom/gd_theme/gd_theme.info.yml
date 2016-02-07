@@ -1,5 +1,5 @@
 name: GD Theme
-description: -
+description: Theme module
 core: 8.x
 package: GD
 type: module

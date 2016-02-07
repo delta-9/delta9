@@ -22,7 +22,10 @@
         "drush/drush": "~8.0",
         "drupal/console": "~0.10",
         "drupal/admin_toolbar": "8.1.*@dev",
-        "drupal/devel": "8.1.*@dev"
+        "drupal/devel": "8.1.*@dev",
+        "drupal/features": "8.3.*@dev",
+        "drupal/metatag": "8.1.*@dev",
+        "drupal/deploy": "8.1.*@dev"
     },
     "require-dev": {
         "behat/mink": "~1.6",
