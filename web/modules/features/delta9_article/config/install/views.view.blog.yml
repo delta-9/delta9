@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.article
+    - system.menu.main
   module:
     - node
     - user
@@ -159,13 +160,15 @@ display:
           expose:
             label: ''
           granularity: second
-      title: blog
+      title: Blog
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      link_url: ''
+      link_display: page_1
     cache_metadata:
       max-age: -1
       contexts:
@@ -276,6 +279,15 @@ display:
     display_options:
       display_extenders: {  }
       path: blog
+      menu:
+        type: normal
+        title: Blog
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:
