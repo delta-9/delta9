@@ -11,19 +11,22 @@ function gd_theme_preprocess_html(&$variables) {
  * Implements hook_preprocess_node().
  */
 function gd_theme_preprocess_node(&$variables, $hook) {
-  $include = drupal_get_path('module', 'gd_theme') .'/includes/' . $variables['node']->type->value . '.inc';
+  $include = drupal_get_path('module', 'gd_theme') .'/includes/' . $variables['node']->bundle() . '.inc';
   if (file_exists($include)) {
     require_once $include;
   }
 
-  $function = __FUNCTION__ . '_' . $variables['node']->type->value;
+  $function = __FUNCTION__ . '_' . $variables['node']->bundle();
   if (function_exists($function)) {
     $function($variables, $hook);
   }
 
   if ($variables['view_mode'] == 'full') {
   }
-  $variables['classes_array'][] = 'view-mode-' . str_replace('_', '-', $variables['view_mode']);
+
+  $variables['attributes']['class'][] = 'view-mode-' . str_replace('_', '-', $variables['view_mode']);
+  $variables['attributes']['class'][] = 'node';
+  $variables['attributes']['class'][] = 'node-' . $variables['node']->bundle();
   array_unshift($variables['theme_hook_suggestions'], $variables['theme_hook_suggestions'][0] . '__' . $variables['view_mode']);
 }
 

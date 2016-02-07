@@ -7,3 +7,5 @@ type: module
 dependencies: 
   - gd_theme
   - delta9_frontpage
+  - delta9_article
+  - delta9_trip

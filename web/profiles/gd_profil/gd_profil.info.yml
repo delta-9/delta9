@@ -48,6 +48,7 @@ dependencies:
   - metatag
   - deploy
   - devel
+  - kint
 themes:
   - classy
   - seven
