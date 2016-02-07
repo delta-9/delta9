@@ -20,6 +20,8 @@
 
   {{ content.comment }}
 
-  <a href="{{ url("view.blog.page_1") }}" class="button clear return-blog">Retour au blog</a>
+  <a href="{{ url("view.blog.page_1") }}" class="button clear return-blog">{% trans %}< Back to the blog{% endtrans %}</a>
+
+  <a href="{{ url("<front>") }}" class="button secondary clear return-front">{% trans %}< Back to the front{% endtrans %}</a>
 
 </article>
