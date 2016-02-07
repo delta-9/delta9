@@ -1,0 +1,12 @@
+name: Article
+description: 'Provide Article content type and related configuration. An article related to my technical blog.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+package: delta9
