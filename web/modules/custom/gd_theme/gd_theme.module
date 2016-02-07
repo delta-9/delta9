@@ -27,7 +27,6 @@ function gd_theme_preprocess_node(&$variables, $hook) {
   $variables['attributes']['class'][] = 'view-mode-' . str_replace('_', '-', $variables['view_mode']);
   $variables['attributes']['class'][] = 'node';
   $variables['attributes']['class'][] = 'node-' . $variables['node']->bundle();
-  array_unshift($variables['theme_hook_suggestions'], $variables['theme_hook_suggestions'][0] . '__' . $variables['view_mode']);
 }
 
 /**

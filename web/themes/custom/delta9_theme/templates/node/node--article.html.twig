@@ -1,0 +1,25 @@
+
+<article{{ attributes }}>
+
+  <h1 class="title">{{ label }}</h1>
+  <span class="date">
+    <span class="day r">{{ node.createdtime|date('d') }}</span>
+    <span class="month r">
+      {{ node.createdtime|date('F') }}
+      {{ node.createdtime|date('Y') }}
+    </span>
+  </span>
+
+  
+  <div class="wrapper-article">
+    <div class="body r">
+      {{ content.body }}
+    </div>
+
+  </div>
+
+  {{ content.comment }}
+
+  <a href="{{ url("view.blog.page_1") }}" class="button clear return-blog">Retour au blog</a>
+
+</article>
