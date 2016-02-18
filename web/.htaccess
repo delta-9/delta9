@@ -69,7 +69,7 @@ AddEncoding gzip svgz
 <IfModule mod_rewrite.c>
   RewriteEngine on
   
-  RewriteCond %{HTTP_HOST} !^delta9\.site$ [NC]
+  RewriteCond https://delta9\.site$ [NC]
   RewriteRule ^(.*)$ https://delta9.link/$1 [R=301,L] 
   
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
