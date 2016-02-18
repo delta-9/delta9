@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0f89953c5d54d4a4152af63f54fa1f32",
-    "content-hash": "83e90ff7c75a1a3b74abca8d0260cc4c",
+    "hash": "c156086b414e86533ff0747b04137d8b",
+    "content-hash": "cdf0803a75b16fc5caf4a37d9e4828b6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -17,7 +17,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alchemy-fr/Zippy/zipball/cc70d1658d2434216e119e65b21ab361619f1805",
+                "url": "https://api.github.com/repos/alchemy-fr/Zippy/zipball/92c773f7bbe47fdb30c61dbaea3dcbf4dd13a40a",
                 "reference": "cc70d1658d2434216e119e65b21ab361619f1805",
                 "shasum": ""
             },
@@ -1395,6 +1395,36 @@
             "description": "Provides a RESTful API that exposes all content entities over UUID endpoints. Utility endpoints are also provided subscribing to changes and handling content replication.",
             "homepage": "https://www.drupal.org/project/relaxed",
             "time": "2016-01-21 14:56:35"
+        },
+        {
+            "name": "drupal/simple_sitemap",
+            "version": "8.1.11",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/simple_sitemap.git",
+                "reference": "8edd1709dd406bbe4c41554d2c081e850aafa757"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-1.11.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/simplesitemap": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "This module creates a standard conform xml sitemap of your content.",
+            "homepage": "https://www.drupal.org/project/simple_sitemap"
         },
         {
             "name": "drush/drush",
@@ -5496,6 +5526,7 @@
         "drupal/metatag": 20,
         "drupal/deploy": 20,
         "drupal/honeypot": 20,
+        "drupal/simple_sitemap": 20,
         "jcalderonzumba/gastonjs": 20,
         "jcalderonzumba/mink-phantomjs-driver": 20
     },
