@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0f7795d6fc3d4f2cdecafcd4028bf287",
-    "content-hash": "c02c3d569711b1ffc8b28c98165d83c5",
+    "hash": "2ff79260ebd92fd1eddcf7554e0be59e",
+    "content-hash": "36568e0add3c78f3b8c53d45406b66fa",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -802,26 +802,36 @@
             "time": "2016-02-02 09:31:53"
         },
         {
-            "name": "drupal/backup_migrate",
-            "version": "dev-8.x-3.x",
+            "name": "drupal/backup_db",
+            "version": "8.1.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/backup_migrate",
-                "reference": "ef834b426bf5fade650ed5d2e0afae2171a601b7"
+                "url": "https://git.drupal.org/project/backup_db.git",
+                "reference": "7c2c28e1b104d1d49cf80cf37dc32298540a2d37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/backup_db-8.x-1.0.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
-                "drupal/core": "8.*"
+                "drupal/core": "8.*",
+                "ifsnop/mysqldump-php": "dev-master"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-8.x-3.x": "8.3.x-dev"
+                    "dev-8.x-1.x": "8.1.x-dev"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "description": "Backup the Drupal database and files or migrate them to another environment.",
-            "homepage": "https://www.drupal.org/project/backup_migrate",
-            "time": "2015-01-17 21:20:43"
+            "license": [
+                "GPL"
+            ],
+            "description": "Provides database backup solutions.",
+            "homepage": "http://drupal.org/project/backup_db",
+            "time": "2016-02-19 08:22:31"
         },
         {
             "name": "drupal/config_update",
@@ -1863,6 +1873,58 @@
                 "uri"
             ],
             "time": "2016-01-23 01:23:02"
+        },
+        {
+            "name": "ifsnop/mysqldump-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ifsnop/mysqldump-php.git",
+                "reference": "9f0fc36e17de62c93ae732b994e7917e8e3ee999"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ifsnop/mysqldump-php/zipball/9f0fc36e17de62c93ae732b994e7917e8e3ee999",
+                "reference": "9f0fc36e17de62c93ae732b994e7917e8e3ee999",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ifsnop\\": "src/Ifsnop/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Diego Torres",
+                    "homepage": "https://github.com/ifsnop",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is a php version of linux's mysqldump in terminal \"$ mysqldump -u username -p...\"",
+            "homepage": "https://github.com/ifsnop/mysqldump-php",
+            "keywords": [
+                "backup",
+                "database",
+                "dump",
+                "export",
+                "mysql",
+                "mysqldump",
+                "pdo",
+                "sqlite"
+            ],
+            "time": "2016-01-03 14:44:37"
         },
         {
             "name": "jakub-onderka/php-console-color",
