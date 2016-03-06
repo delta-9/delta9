@@ -37,9 +37,8 @@
  */
 #}
 
-  {% if multiple %}
-    <div{{ attributes }}>
-      {% for item in items %}
-        <div{{ item.attributes }}>{{ item.content }}<p>{{ item.content['#item'].alt }}</p></div>
-      {% endfor %}
-    </div>
+<div{{ attributes }}>
+  {% for item in items %}
+    <div{{ item.attributes }}>{{ item.content }}	<p>{{ item.content['#item'].alt }}</p></div>
+  {% endfor %}
+</div>
