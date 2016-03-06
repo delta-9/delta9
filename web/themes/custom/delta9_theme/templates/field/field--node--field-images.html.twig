@@ -39,6 +39,7 @@
 
 <div{{ attributes }}>
   {% for item in items %}
-    <div{{ item.attributes }}>{{ item.content }}	<p>{{ item.content['#item'].alt }}</p></div>
+    <div{{ item.attributes }}>{{ item.content }}	<p><strong>{{ item.content['#item'].alt }}</strong></p></div>
+  	<p>&nbsp;</p><p>&nbsp;</p>
   {% endfor %}
 </div>
